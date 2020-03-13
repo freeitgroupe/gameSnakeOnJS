@@ -124,11 +124,9 @@ function drawGame() {
 
     eatTail(newHead,snake);
 
-
     //Новый элемент помещаем в новые координаты, т.е. записываем координаты в начало массива
     snake.unshift(newHead);
 }
-
 
 //для отрисовки изображения будем вызывать ф-ю drawGame() каждые 100 милисек
 let game = setInterval(drawGame, 300);
